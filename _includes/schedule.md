@@ -1,11 +1,11 @@
 | **Date** | **Class**                      |   **Topics**                     |
 |----------|--------------------------------|----------------------------------|
-| Jan. 5   | Lecture                        | Intro to R & RStudio -  basics        |
-| Jan. 7        | Lecture              |  data structures, skip matrices, data import/export        |
-|          | Quiz & Assignment 1             |  Quiz 1 -- Assignment 1 - posted in Canvas         |
-| Jan. 12  | Lecture                        | dplyr, tidyverse           |
-| Jan. 14         | Lecture               |    Cont.        |
-|          | Quiz & Assignment 2             |  Quiz 2 -- Assignment 2 - posted in Canvas         |
-| Jan. 19       |  Lecture     | Plotting with ggplot2         |
-| Jan. 21         | Lecture            | ggplot2 cont., knitr  |
-|          | Quiz & Assignment 3             |  Quiz 3 -- Assignment 3 - posted in Canvas         |
+| Jan. 25   | Lecture                        | Intro to R & RStudio -  basics        |
+| Jan. 27        | Lecture              |  data structures, data import/export        |
+|          | Quiz & Assignment              |  Quiz 1 -- Assignment 1 - posted in Canvas         |
+| Feb. 1  | Lecture                        | dplyr, tidyverse           |
+| Feb. 3         | Lecture               |    dplyr, tidyverse cont.        |
+|          | Quiz & Assignment             |  Quiz 2 -- Assignment 2 - posted in Canvas         |
+| Feb. 8       |  Lecture     | Plotting with ggplot2         |
+| Feb. 10         | Lecture            | ggplot2 cont., knitr  |
+|          | Quiz & Assignment              |  Quiz 3 -- Assignment 3 - posted in Canvas         |
