@@ -7,7 +7,7 @@
 -->
 <html>
   <head>
-    <title>UCSD Carpentries - {{ page.eventtitle }}</title>
+    <title>UCSD {{ page.eventtitle }}</title>
     {% include header.html %}
     <meta name="slug" content="{{site.github.project_title}}" />
     <meta name="startdate" content="{{page.startdate}}" />
@@ -28,9 +28,6 @@
     {% endif %}
   </head>
   <body class="workshop">
-
-    {% include github-ribbon.html %}
-
     <div class="container card">
       {% include banner.html %}
       <div class="jumbotron">
@@ -41,7 +38,7 @@
               <div class="col-md-6">
                 <p>Date: {{page.humandate}}</p>
                 <p>Days/Time: {{page.days}}/{{page.humantime}}</p>
-                <p>Venue: {page.venue}}</p>
+                <p>Venue: {{page.venue}}</p>
                 <p></p>
               </div>
               <div class="col-md-6">
