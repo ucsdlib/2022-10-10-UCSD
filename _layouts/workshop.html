@@ -7,7 +7,7 @@
 -->
 <html>
   <head>
-    <title>UCSD Carpentries: {{ page.eventitle }}</title>
+    <title>UCSD Carpentries: {{ page.eventtitle }}</title>
     {% include header.html %}
     <meta name="slug" content="{{site.github.project_title}}" />
     <meta name="startdate" content="{{page.startdate}}" />
@@ -36,12 +36,13 @@
       <div class="jumbotron">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <h2>{{page.venue}}</h2>
+            <h2>{{page.eventtitle}}</h2>
             <div class="row">
               <div class="col-md-6">
-                <p>{{page.humandate}}</p>
-                <p>{% if page.humantime %}{{page.days}}:{{page.humantime}}{% endif %}</p>
-                <P></p>
+                <p>Date: {{page.humandate}}</p>
+                <p>Days/Time: {{page.days}}/{{page.humantime}}</p>
+                <p>Venue: {page.venue}}</p>
+                <p></p>
               </div>
               <div class="col-md-6">
                 <p>
