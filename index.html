@@ -1,24 +1,24 @@
 ---
 layout: workshop
 root: .
-venue: "Intro to R - School of Global Policy and Strategy"      # brief name of host site without address (e.g., "Euphoric State University")
-address: "RM 3203, School of Global Policy and Strategy, 9500 Gilman Drive, #0519, La Jolla, CA"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+venue: "UC San Diego"      # brief name of host site without address (e.g., "Euphoric State University")
+address: "Event Room (G1E), Geisel Library, 9500 Gilman Drive, La Jolla, CA"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "us"    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "32.885125,-117.241173"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "Jan 25 - Feb 10, 2022"  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "2:00 pm -3:20 pm"  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: "2022-01-25"  # use YYYY-MM-DD format like "2015-01-01"
-enddate: "2022-02-10"  # use YYYY-MM-DD format like" 2015-01-02"
-days: "Tuesday, Thursday"
+humandate: "April 11-14, 2022"  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00am - 12:00pm PT"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2022-04-11"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2022-04-14"  # use YYYY-MM-DD format like" 2015-01-02"
+days: "Monday - Thursday"
 instructor: ["TBD", "TBD"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Slade Mahoney (TA-GPS)", "Reid Otsuji (Library)", "Kimberly Thomas(Research ITS)","Stephanie Labou(Library)"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Reid Otsuji (Library)", "Kimberly Thomas(Research ITS)"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "rotsuji@ucsd.edu, kkt008@ucsd.edu"    # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: "https://hackmd.io/@U2NG/S1g1fvCKt" # optional (insert the URL for your Etherpad if you're using one)
+etherpad: "TBD" # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
-  HEADER
+  HEADER (above)
 
   Edit the values in the block above to be appropriate for your workshop.
   If the value is not 'true', 'false', 'null', or a number, please use
@@ -53,10 +53,24 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  This is the website for the <a href="{{site.gps_site}}">School of Global Policy and Strategy</a> skills course in the R programming language.  This course will introduce you the R programming language and how to use R to work with data from GapMinder.  In order to earn a certificate of proficiency, you must attend all of the class meetings for the course, do the short coding assignments, and pass the short, in-class quiz at the end of the course.
+  <a href="{{site.swc_site}}">Software Carpentry</a>
+  aims to help researchers get their work done
+  in less time and with less pain
+  by teaching them basic research computing skills.
+  This hands-on workshop will cover basic concepts and tools,
+  including program design, version control, data management,
+  and task automation.
+  Participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
 </p>
 
-
+<p>
+  <em>
+    For more information on what we teach and why,
+    please see our paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+  </em>
+</p>
 <!--
   AUDIENCE
 
@@ -65,7 +79,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at GPS graduate students.
+  This workshop is open to UCSD students, staff, and faculty.
   <strong>You don't need to have any previous knowledge of programming or the tools presented in the course to attend.  A laptop is required for the class.</strong>
 </p>
 
@@ -119,49 +133,29 @@ A certificate of proficiency will be given to the student who:
 </p>
 
 <ul>
-<li>20% Attends and participates in classes</li>
+<li>20% Attends and participates in all sessions</li>
 <li>40% Passes all in-course quizzes</li>
-<li>40% Satisfactorily completes the weekly homework assignments</li>
 </ul>
 
-<p id="help">
-{% if site.lib_appt %}
-  <strong>Need help?</strong>:
-  <ul>
-    <li> Reid Otsuji: Email <a href='mailto:{{page.contact}}'>{{page.contact}}</a></li>
-{% endif %}
-  <li>TA Slade Mahoney <a href='mailto:pmahoney@ucsd.edu'>pmahoney@ucsd.edu</a>, Office Hours: TBD<!-- <a href="{{site.lib_data_lab}}">Library Data/GIS Lab</a> --> </li>
-  <li><a href="{{site.lib_data_lab}}">Library Data/GIS Lab</a> has R specialists</li>
-</ul>
-</p>
-<p id = "data">
-<strong>Data:</strong> We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder data</a>. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The CSV can be downloaded from <a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">here</a>.
-
-</p>
-
-<strong>Lecture notes & command histories:</strong>
-
-{% capture notes %}{% include notes.md %}{% endcapture %}
-{{ notes  | markdownify }}
-
-<p>
-<strong>Credits:</strong>  The course materials are adpated from the Software Carpentry <a href="http://software-carpentry.org/lessons/">lessons</a>. Many thanks to the authors of those lessons.
-</p>
 <hr/>
 <!--
   SCHEDULE
 
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
+  Show the workshop's schedule.  
 -->
-<h2 id="schedule">Schedule</h2>
-
-{% capture schedule %}{% include schedule.md %}{% endcapture %}
-{{ schedule  | markdownify }}
-<!--
-{% include schedule.html %}
--->
+<div class="row">
+  <div class="col-md-6">
+    <table class="table table-striped">
+     <thead><tr> <th><strong>Date</strong></th> <th><strong>Session</strong></th> <th><strong>Topics</strong></th> </tr></thead>
+     <tbody>
+      <tr><td>April 11</td><td>Introduction to R - Session 1</td><td>Intro to R & RStudio - basics, data structures, and data import/export</td></tr>
+      <tr><td>April 12</td><td>Introduction to R - Session 2</td><td>dplyr and tidyverse</td></tr>
+      <tr><td>April 13</td><td>Introduction to R - Session 3</td><td>Plotting with ggplot2 and knitr</td></tr>
+      <tr><td></td><td>Quiz</td><td> Due next session; posted on Canvas</td></tr>
+      <tr><td>April 14</td><td>Version Control with Git</td><td>Introduction to Git, creating a repository, tracking changes, and collaborating</td></tr>
+     </tbody></table>
+  </div>
+</div>
 <!--
   ETHERPAD
 
@@ -176,6 +170,13 @@ A certificate of proficiency will be given to the student who:
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 -->
+
+<p id = "data">
+  <strong>Data:</strong> We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder data</a>. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The CSV can be downloaded from <a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">here</a>.
+</p>
+
+</hr>
+
 {% if page.etherpad %}
 <p id="etherpad">
   <strong>HackMD:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
@@ -184,112 +185,8 @@ A certificate of proficiency will be given to the student who:
 </p>
 {% endif %}
 
-
 <hr/>
-
-<!--
-  SYLLABUS
-
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-<h2 id="syllabus">Syllabus</h2>
-
-<div class="row">
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li><a href="http://swcarpentry.github.io/r-novice-gapminder/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
-     </ul>
-   </div>
-   -->
-</div>
-<!--
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
--->
+  
 <hr/>
 
 <!--
@@ -361,7 +258,9 @@ A certificate of proficiency will be given to the student who:
       </p>
     </div>
   </div>
-</div> <!-- End of 'R' section. -->
+</div> 
+<!-- End of 'R' section. -->
+
 <!-- hiding SQL Lite insrtuctions
 <div id="sql"> Start of 'SQLite' section.
   <h3>SQLite</h3>
@@ -398,32 +297,4 @@ A certificate of proficiency will be given to the student who:
   </div>
 
 </div> End of 'SQLite' section. -->
-
-
-<!--
-  Uncomment this section if you are using our virtual machine.
-
-<div id="vm">
-  <h3>Virtual Machine</h3>
-
-  <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
-  </p>
-  <ol>
-    <li>
-      Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
-    </li>
-    <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is 1.7 GByte, so please
-      download it <em>before</em> coming to your workshop.
-    </li>
-    <li>
-      Load the VM into VirtualBox by selecting "Import Appliance" and
-      loading the <code>.ova</code> file.
-    </li>
-  </ol>
-</div>
--->
+<!--test note-->
