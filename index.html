@@ -145,11 +145,51 @@ A Co-Curricular of Record activity recongnizion will be given to the student who
 For more information on the UC San Diego Co-Curricular of Record (CCR), please visit the <a href="https://elt.ucsd.edu/ccr/index.html">UCSD Engaged Learning Tools Co-Curricular Record page</a>.
 </p>
 <hr/>
+
+<!-- Below is the official Carpentries Code of Conduct information -->
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<p>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+</p>
+
+<p class="text-center">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  </a>
+</p>
+<hr/>
+
+<!-- Below is the official Carpentries Survey links -->
+
+<h2 id="surveys">Surveys</h2>
+<p>Please be sure to complete these surveys before and after the workshop.</p>
+{% if site.carpentry == "incubator" %}
+<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
+{% elsif site.incubator_pre_survey or site.incubator_post_survey %}
+<div class="alert alert-danger">
+WARNING: you have defined custom pre- and/or post-survey links for
+a workshop not configured for The Carpentries Incubator
+(the value of `curriculum` is not set to `incubator` in `_config.yml`).
+Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
+in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
+change the value of `carpentry` to `incubator`.
+</div>
+{% else %}
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+{% endif %}
+
+<hr/>
+
 <!--
   SCHEDULE
 
   Show the workshop's schedule.  
 -->
+<h2 id="schedule">Schedule</h2>
 <div class="row">
   <div class="col-md-6">
     <table class="table">
@@ -163,6 +203,7 @@ For more information on the UC San Diego Co-Curricular of Record (CCR), please v
      </tbody></table>
   </div>
 </div>
+</hr>
 <!--
   ETHERPAD
 
@@ -177,9 +218,9 @@ For more information on the UC San Diego Co-Curricular of Record (CCR), please v
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 -->
-
+<h2 id="datasect">Data</h2>
 <p id = "data">
-  <strong>Data:</strong> We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder data</a>. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The CSV can be downloaded from <a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">here</a>.
+We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder data</a>. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The CSV can be downloaded from <a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">here</a>.
 </p>
 
 </hr>
@@ -193,9 +234,6 @@ For more information on the UC San Diego Co-Curricular of Record (CCR), please v
 {% endif %}
 
 <hr/>
-  
-<hr/>
-
 <!--
   SETUP
 
