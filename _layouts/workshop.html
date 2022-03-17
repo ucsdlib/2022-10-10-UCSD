@@ -7,7 +7,7 @@
 -->
 <html>
   <head>
-    <title>UCSD Library: {{ page.venue }}</title>
+    <title>UCSD Carpentries: {{ page.eventitle }}</title>
     {% include header.html %}
     <meta name="slug" content="{{site.github.project_title}}" />
     <meta name="startdate" content="{{page.startdate}}" />
@@ -21,6 +21,8 @@
     <meta name="instructor" content="{{page.instructor|join:'|'}}" />
     <meta name="helper" content="{{page.helper|join:'|'}}" />
     <meta name="contact" content="{{page.contact}}" />
+    <meta name="eventtitle" content="{{page.eventtitle}}" />
+
     {% if page.redirect %}
     <meta http-equiv="refresh" content="0; url={{page.redirect}}" />
     {% endif %}
