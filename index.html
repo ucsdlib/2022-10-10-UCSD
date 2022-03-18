@@ -253,65 +253,81 @@ We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder d
   access to the software described below. In addition, you will
   need an up-to-date web browser.
 </p>
-
-<div id="r"> <!-- Start of 'R' section. -->
+<!-- Start of 'R' section. -->
+<div id="r">
   <h3>R</h3>
-
   <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
+    <a href="https://www.r-project.org">R</a> is a programming language
     that is especially powerful for data exploration, visualization, and
     statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
+    <a href="https://www.rstudio.com/">RStudio</a>.
   </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the
-        installers as administrator (right-click on .exe file and select "Run as
-        administrator" instead of double-clicking). Otherwise problems may occur later,
-        for example when installing R packages.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#rstats-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#rstats-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#rstats-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="rstats-windows">
+        <p>
+          Install R by downloading and running
+          <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+          Also, please install the
+          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+          Note that if you have separate user and admin accounts, you should run the
+          installers as administrator (right-click on .exe file and select "Run as
+          administrator" instead of double-clicking). Otherwise problems may occur later,
+          for example when installing R packages.
+        </p>
+        <p><strong>Video Tutorial:</strong> <a href="https://youtu.be/q0PjTAylwoU">SWC R Install Windows</a></p>
+        <!--
+        <div class="yt-wrapper2">
+          <div class="yt-wrapper">
+          <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/q0PjTAylwoU?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
+        </div>
+        </div>
+        -->      
+      </article>
+      <article role="tabpanel" class="tab-pane" id="rstats-macos">
+        <p>
+          Install R by downloading and running
+          <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+          Also, please install the
+          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+        </p>
+        <p><strong>Video Tutorial:</strong> <a href="https://youtu.be/5-ly3kyxwEg">SWC R Install Mac</a></p>     
+        <!--
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/5-ly3kyxwEg?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
+        </div>
+        </div>
+        -->
+      </article>
+      <article role="tabpanel" class="tab-pane" id="rstats-linux">
+        <p>
+          Instructions for R installation on various Linux platforms (debian,
+          fedora, redhat, and ubuntu) can be found at
+          <https://cran.r-project.org/bin/linux/>. These will instruct you to
+          use your package manager (e.g. for Fedora run
+          <code>sudo dnf install R</code> and for Debian/Ubuntu, add a ppa
+          repository and then run <code>sudo apt-get install r-base</code>).
+          Also, please install the
+          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+        </p>
+      </article>
     </div>
   </div>
-</div> 
+</div>
+
 <!-- End of 'R' section. -->
 
 <!-- hiding SQL Lite insrtuctions
 <div id="sql"> Start of 'SQLite' section.
   <h3>SQLite</h3>
-
-
-
   <p>
     SQL is a specialized programming language used with databases.  We
     use a simple database manager called
