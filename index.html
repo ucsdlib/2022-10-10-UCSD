@@ -219,15 +219,17 @@ change the value of `carpentry` to `incubator`.
   e.g., '2015-06-10-esu'.
 -->
 <h2 id="datasect">Data</h2>
+<!-- R specific data information begins -->
 <p id = "data">
 We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder data</a>. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The CSV can be downloaded from <a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">here</a>.
 </p>
+<!-- R specific data information ends -->
 
 </hr>
 
 {% if page.etherpad %}
 <p id="etherpad">
-  <strong>HackMD:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>HackMD: TBD</strong> <!-- <a href="{{page.etherpad}}">{{page.etherpad}}</a>.-->
   <br/>
   We will use this HackMD for taking notes, and sharing URLs and bits of code.
 </p>
@@ -263,11 +265,11 @@ We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder d
     <a href="https://www.rstudio.com/">RStudio</a>.
   </p>
   <div class="tab">
-    <button class="tablinks" onclick="openTab(event,'Windows')">Windows</button>
-    <button class="tablinks" onclick="openTab(event,'MacOS')">MacOS</button>
-    <button class="tablinks" onclick="openTab(event,'Linux')">Linux</button>
+    <button class="tablinks" onclick="openTab(event,'RWindows')">Windows</button>
+    <button class="tablinks" onclick="openTab(event,'RMacOS')">MacOS</button>
+    <button class="tablinks" onclick="openTab(event,'RLinux')">Linux</button>
   </div>
-  <div id="Windows" class="tabcontent">
+  <div id="RWindows" class="tabcontent">
     <p>
       Install R by downloading and running
       <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
@@ -281,7 +283,7 @@ We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder d
     </p>
     <p><strong>Video Tutorial:</strong> <a href="https://youtu.be/q0PjTAylwoU">SWC R Install Windows</a></p>
   </div>
-  <div id="MacOS" class="tabcontent">
+  <div id="RMacOS" class="tabcontent">
     <p>
       Install R by downloading and running
       <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
@@ -291,7 +293,7 @@ We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder d
     </p>
     <p><strong>Video Tutorial:</strong> <a href="https://youtu.be/5-ly3kyxwEg">SWC R Install Mac</a></p>     
   </div>
-  <div id="Linux" class="tabcontent">
+  <div id="RLinux" class="tabcontent">
     <p>
       Instructions for R installation on various Linux platforms (debian,
       fedora, redhat, and ubuntu) can be found at
@@ -306,6 +308,68 @@ We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder d
 </div>
 
 <!-- End of 'R' section. -->
+
+<!-- Start of Git section. -->
+<div id="git">
+  <h3>Git</h3>
+  <p>
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">github.com</a>. You will need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported
+    web browser</a>.
+  </p>
+  <p>
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+      for keeping your email address private</a> provided at GitHub.
+  </p>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event,'GitWindows')">Windows</button>
+    <button class="tablinks" onclick="openTab(event,'GitMacOS')">MacOS</button>
+    <button class="tablinks" onclick="openTab(event,'GitLinux')">Linux</button>
+  </div>
+    <div id="GitWindows" class="tabcontent">
+      <p>
+        Git should be installed on your computer as part of your Bash
+        install (see the
+        <a href="#shell">Shell installation instructions</a>).
+      </p>
+    </div>
+    <div id="GitMacOS" class="tabcontent">
+      <p>
+        <strong>For macOS</strong>, install Git for Mac
+        by downloading and running the most recent "mavericks" installer from
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+        Because this installer is not signed by the developer, you may have to
+        right click (control click) on the .pkg file, click Open, and click
+        Open on the pop up window.
+        After installing Git, there will not be anything in your <code>/Applications</code> folder,
+        as Git is a command line program.
+        <strong>For older versions of OS X (10.5-10.8)</strong> use the
+        most recent available installer labelled "snow-leopard"
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+      </p>
+      <p><strong>Video Tutorial: </strong><a href="https://youtu.be/9LQhwETCdwY">SWC Install Shell, Git, and Nano on Mac</a></p>
+    </div>
+    <div id="GitLinux" class="tabcontent">
+      <p>
+      If Git is not already available on your machine you can try to
+      install it via your distro's package manager. For Debian/Ubuntu run
+      <code>sudo apt-get install git</code> and for Fedora run
+      <code>sudo dnf install git</code>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- End of Git section. -->
+
 
 <!-- hiding SQL Lite insrtuctions
 <div id="sql"> Start of 'SQLite' section.
