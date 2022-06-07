@@ -15,8 +15,8 @@ swc_installer   : "https://github.com/swcarpentry/windows-installer/releases/dow
 swc_site        : "http://software-carpentry.org"
 swc_twitter     : "http://twitter.com/swcarpentry"
 swc_vm          : "https://docs.google.com/uc?id=0B4Kr6DYkzkQtSTZLQzF4aVB4NDQ&export=download"
-swc_pre_survey  : "https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id="
-swc_post_survey : "https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id="
+swc_pre_survey  : "https://carpentries.typeform.com/to/wi32rS?slug="
+swc_post_survey : "https://carpentries.typeform.com/to/UgVdRQ?slug="
 
 #--------------------------------------------------------------------------------
 # UCSD Library Workshop settings - including Department partners
