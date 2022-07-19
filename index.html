@@ -1,22 +1,22 @@
 ---
 layout: workshop
 root: .
-eventtitle: "Carpentries Bootcamp: Intro. to R and Version Control w/ Git" # enter name of the event here
+eventtitle: "Carpentries Bootcamp: R, Unix Shell, & Git"" # enter name of the event here
 venue: "UC San Diego"      # brief name of host site without address (e.g., "Euphoric State University")
-address: "Event Room (G1E), Geisel Library, 9500 Gilman Drive, La Jolla, CA"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+address: "Virtual (via Zoom)"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "us"    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "32.885125,-117.241173"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "June 13-16, 2022"  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "9:00am-12:00pm PT"  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: "2022-06-13"  # use YYYY-MM-DD format like "2015-01-01"
-enddate: "2022-06-16"  # use YYYY-MM-DD format like" 2015-01-02"
+humandate: "August 8 - 11, 2022"  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "1:00 - 4:00pm PT"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2022-08-08"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2022-08-11"  # use YYYY-MM-DD format like" 2015-01-02"
 days: null
-instructor: ["Eastern Kang", "Justin Shaffer", "Kimberly Thomas"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Reid Otsuji", "Kimberly Thomas", "Stephanie Labou", "Chi Gao", "Wout Bittremieux"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Eastern Kang", "Ana Dantas Machado", "Kimberly Thomas"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Annelise Sklar"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "kkt008@ucsd.edu or rotsuji@ucsd.edu "    # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: "TBD" # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+<!--etherpad: "TBD" # optional (insert the URL for your Etherpad if you're using one) -->
+<!-- eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB") -->
 ---
 <!--
   HEADER (above)
@@ -180,11 +180,10 @@ Everyone who participates in Carpentries activities is required to conform to th
     <table class="table">
      <thead><tr> <th><strong>Date</strong></th> <th><strong>Session</strong></th> <th><strong>Topics</strong></th> </tr></thead>
      <tbody>
-      <tr><td>June 13</td><td>Introduction to R - Session 1</td><td>Intro to R & RStudio - basics, data structures, and data import/export</td></tr>
-      <tr><td>June 14</td><td>Introduction to R - Session 2</td><td>dplyr and tidyverse</td></tr>
-      <tr><td>June 15</td><td>Introduction to R - Session 3</td><td>Plotting with ggplot2 and knitr</td></tr>
-      <tr><td></td><td>Quiz</td><td> Due next session; posted on Canvas</td></tr>
-      <tr><td>June 16</td><td>Version Control with Git</td><td>Introduction to Git, creating a repository, tracking changes, and collaborating</td></tr>
+      <tr><td>Aug 8</td><td>Introduction to R - Session 1</td><td>Intro to R & RStudio - basics, data structures, and data import/export</td></tr>
+      <tr><td>Aug 9</td><td>Introduction to R - Session 2</td><td>dplyr and tidyverse</td></tr>
+      <tr><td>Aug 10</td><td>Introduction to R - Session 3</td><td>Plotting with ggplot2 and knitr</td></tr>
+      <tr><td>Aug 11</td><td>Unix Shell & Version Control w/ Git</td><td> Unix Shell: Introduction, Navigating the file system, & working with files & directories <br> Git: Introduction, Creating a Repository, Tracking Changes, and Collaborating</td></tr>
      </tbody></table>
   </div>
 </div>
@@ -206,13 +205,13 @@ Everyone who participates in Carpentries activities is required to conform to th
 <h2 id="curriculum">Curriculum</h2>
 <!-- R specific data information begins -->
 <p id = "curriculum">
-For this workshop we will be referencing the <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a> and <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> Carpentries curricula. 
+For this workshop we will be referencing the <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>, <a href="https://librarycarpentry.org/lc-shell/">The UNIX Shell</a>, and <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> Carpentries curricula. 
 </p>
 
 <h2 id="datasect">Data</h2>
 <!-- R specific data information begins -->
 <p id = "data">
-We will be using the 5 year gapminder data and feline data. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The gapminder CSV file can be downloaded from <a href="./data/gapminder-FiveYearData.csv">here</a>. The feline data CSV file can be downloaded from <a href="./data/feline-data.csv">here</a></p>
+We will be using the 5 year gapminder data, feline data, and shell lesson data. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The data downloads are as follows: <a href="./data/gapminder-FiveYearData.csv">Gapminder data</a>, <a href="./data/feline-data.csv">feline data</a></p>, and the <a href="https://librarycarpentry.org/lc-shell/data/shell-lesson.zip">shell-lesson data</a>.</p>
 <!-- R specific data information ends -->
 
 </hr>
@@ -296,6 +295,93 @@ We will be using the 5 year gapminder data and feline data. You can go ahead and
 </div>
 
 <!-- End of 'R' section. -->
+
+
+<!-- Start of Unix Shell section. -->
+
+<div id="shell">
+  <h3>The Bash Shell</h3>
+  <p>
+    Bash is a commonly-used shell that gives you the power to do
+    tasks more quickly.
+  </p>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event,'ShellWindows')">Windows</button>
+    <button class="tablinks" onclick="openTab(event,'ShellMacOS')">MacOS</button>
+    <button class="tablinks" onclick="openTab(event,'ShellLinux')">Linux</button>
+  </div>
+  <div id="ShellWindows" class="tabcontent">
+    <ol>
+       <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
+       <li>Run the installer and follow the steps below:
+          <ol>
+            <p>Git 2.27.0 Setup<p/>
+            <li>Click on "Next" four times (two times if you've previously installed Git).  You don't need to change anything in the Information, location, components, and start menu screens.</li>
+            <li><strong>From the dropdown menu select "Use the nano editor by default" and click on "Next".</strong></li>
+              <p>Adjusting your PATH environment</p>
+            <li>Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)</li>
+              <p>Choosing the SSH executable</p>
+              <p>Choosing HTTPS transport backend</p>
+            <li>Ensure that "Use the native Windows Secure Channel library" is selected and click on "Next".</li>
+              <p>This should mean that people stuck behind corporate firewalls that do MITM attacks with their own root CA are still able to access remote git repos.</p>
+              <p>Configuring the line ending conversions</p>
+            <li>Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".</li>
+              <p>Configuring the terminal emulator to use with Git Bash</p>
+            <li><strong>Ensure that "Use Windows' default console window" is selected and click on "Next".</strong></li>
+              <p>Configuring extra options</p>
+            <li>Ensure that "Default (fast-forward or merge) is selected and click "Next"</li>
+            <li>Ensure that "Enable file system caching" and "Enable Git Credential Manager" are selected and click on "Next".</li>
+              <p>Configuring experimental options</p>
+            <li>Click on "Install".</li>
+              <p>Installing</p>
+              <p>Completing the Git Setup Wizard</p>
+              <p>as of 2020-06-02, the Window will say "click Finish", but the button is labelled as "Next"</p>
+            <li>Click on "Finish" or "Next".</li>
+          </ol>
+      </li>
+          <li>If your "HOME" environment variable is not set (or you don't know what this is):
+            <ol>
+              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)</li>
+              <li>Type the following line into the command prompt window exactly as shown:
+                <p><code>setx HOME "%USERPROFILE%"</code></p>
+              </li>
+              <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
+              <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
+            </ol>
+	  </li>
+        </ol>
+        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+        <p><strong>Video Tutorial:</strong> <a href="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0">Windows Installation</a></p>     
+  </div>
+  <div id="ShellMacOS" class="tabcontent">
+    <p>The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in <code>/Applications/Utilities</code>). See the Git installation <a href="#shell-macos-video-tutorial">video tutorial</a> for an example on how to open the Terminal. You may want to keep Terminal in your dock for this workshop.</p>
+        <p>
+            To see if your default shell is Bash type <code>echo $SHELL</code>
+            in Terminal and press the <kbd>Return</kbd> key. If the message
+            printed does not end with '/bash' then your default is something
+            else and you can run Bash by typing <code>bash</code>
+        </p>
+        <p>
+          If you want to change your default shell, see <a href="https://support.apple.com/en-au/HT208050" rel="noopener">
+          this Apple Support article</a> and follow the instructions on "How to change your default shell".
+        </p><strong>Video Tutorial</strong>
+        <a href="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0">MacOS Installation</a>
+   </div>
+   <div id="ShellLinux" class="tabcontent">
+      <p>
+        The default shell is usually Bash and there is usually no need to
+        install anything.
+      </p>
+      <p>
+        To see if your default shell is Bash type <code>echo $SHELL</code> in
+        a terminal and press the <kbd>Enter</kbd> key. If the message printed
+        does not end with '/bash' then your default is something else and you
+        can run Bash by typing <code>bash</code>.
+      </p>
+   </div>
+</div>
+<!-- End of Unix Shell section. -->
+
 
 <!-- Start of Git section. -->
 <div id="git">
