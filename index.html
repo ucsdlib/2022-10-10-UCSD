@@ -16,7 +16,6 @@ instructor: ["Eastern Kang", "Ana Dantas Machado", "Kimberly Thomas"] # list of 
 helper: ["Annelise Sklar"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "kkt008@ucsd.edu or rotsuji@ucsd.edu "    # contact email address for workshop organizer, such as "grace@hopper.org"
 <!--etherpad: "TBD" # optional (insert the URL for your Etherpad if you're using one) -->
-<!-- eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB") -->
 ---
 <!--
   HEADER (above)
@@ -26,26 +25,6 @@ contact: "kkt008@ucsd.edu or rotsuji@ucsd.edu "    # contact email address for w
   double quotation marks around the value, unless specified otherwise.
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
-
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-<h2 id="general">General Information</h2>
 
 <!--
   INTRODUCTION
@@ -164,9 +143,10 @@ Everyone who participates in Carpentries activities is required to conform to th
 
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
+<!--
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
+-->
 <hr/>
 
 <!--
